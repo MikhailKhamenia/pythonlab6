@@ -1,0 +1,13 @@
+<html><body>
+<h1>Customers List</h1>
+<ul>
+    {% for customer in customers %}
+    <li>{{ customer.surname }}
+<!--    {% autoescape on %}-->
+    {{ customer.addres }}
+    {{ customer.facs_number }}
+<!--    {% endautoescape on %}-->
+    </li>
+    {% endfor %}
+</ul>
+</body></html>
